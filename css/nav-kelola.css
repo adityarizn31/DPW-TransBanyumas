@@ -1,0 +1,96 @@
+.left-side {
+    position: absolute;
+}
+
+.right-side {
+    padding-left: 60px;
+}
+
+.nav-kelola {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: -12.5%;
+    width: 15%;
+    padding-top: 20px;
+    background-color: black;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+
+.nav-kelola .nama {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-kelola ul {
+    margin-top: 10px;
+}
+
+.nav-kelola ul li {
+    padding: 10px 10px;
+    margin-left: 10px;
+}
+
+.nav-kelola ul li a {
+    font-size: 17px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.nav-kelola ul li:hover > a {
+    color: black;
+}
+
+.nav-kelola ul li:hover {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+.nav-kelola .arrow {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+    left: 8px;
+    box-sizing: border-box;
+    transition: 0.7s;
+}
+
+.nav-kelola .arrow:hover {
+    box-shadow: 0 0 8px #000;
+    cursor: pointer;
+}
+
+.nav-kelola .arrow img {
+    width: 40px;
+    height: 40px;
+    transition: 0.7s;
+}
+
+#kelola {
+    display: none;
+}
+
+#kelola:checked ~ .nav-kelola {
+    left: 0;
+}
+
+#kelola:checked ~ .nav-kelola .arrow {
+    box-shadow: 0 0 5px #000;
+}
+
+#kelola:checked ~ .nav-kelola .arrow img {
+    transform: rotate(180deg);
+}
+
+#kelola:checked ~ .left-side {
+    position: static;
+}
+
+#kelola:checked ~ .right-side {
+    padding-left: 0;
+}

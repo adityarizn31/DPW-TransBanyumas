@@ -1,0 +1,57 @@
+footer .footer-part {
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 40px 40px 0 40px;
+}
+
+footer .footer-part a {
+    color: white;
+    transition: 0.7s;
+}
+
+footer .footer-part iframe {
+    margin-top: 10px;
+    width: 100%;
+}
+
+footer .footer-part a:hover{
+    color: #bbbbbb;
+	padding-left: 8px;
+}
+
+footer .footer-part ul li {
+    margin: 8px 0;
+}
+
+footer .medsos {
+    margin: 30px 20px 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+}
+
+.medsos .medsos-part {
+    margin: 12px 0 20px 0;
+}
+
+.medsos .medsos-part a:hover {
+    position: relative;
+    color: #bbb;
+    left: 8px;
+}
+
+.medsos .medsos-part a img {
+    width: 30px;
+}
+
+footer .copy {
+    background: #000;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+@media (max-width: 500px) {
+    .lokasi {
+        margin-top: 10px;
+    }
+}

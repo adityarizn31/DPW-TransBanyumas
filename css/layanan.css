@@ -1,0 +1,175 @@
+@import url(header.css);
+
+@import url(footer.css);
+
+/* Info */
+
+.info-trans {
+    background-color: #FFF;
+    margin-bottom: 20px;
+}
+
+.info-trans .foto-card {
+    position: relative;
+    left: -8%;
+    top: 80px;
+    width: 25%;
+}
+
+.foto-card img {
+    width: 100%;
+    border: 6px ridge;
+    border-radius: 20px;
+}
+
+.info-trans .teks {
+    width: 75%;
+    padding: 80px 10% 80px 8%;
+}
+
+.info-trans .teks .isi {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+/* bungkus */
+
+.bungkus {
+    height: 1200px;
+}
+
+.bungkus .penggunaan, .bungkus .layanan {
+    position: relative;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #151515;
+}
+
+.bungkus .penggunaan {
+    left: 20%;
+}
+
+.bungkus .layanan {
+    top: 75%;
+    right: 20%;
+}
+
+/* penggunaan */
+
+.penggunaan li {
+    margin: 4% 8%;
+}
+
+.penggunaan li .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+}
+
+.penggunaan li:nth-child(odd) .icon{
+    float: left;
+}
+
+.penggunaan li:nth-child(even) .icon{
+    float: right;
+}
+
+.penggunaan li .icon img {
+    width: 50px;
+}
+
+.penggunaan li .langkah {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 70px;
+    padding: 10px;
+}
+
+.penggunaan li:nth-child(even) .langkah {
+    float: right;
+    text-align: right;
+}
+
+/* layanan */
+
+.layanan li .nomor {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #151515;
+    margin: 5px 10px 5px 30px;
+}
+
+.layanan li .layanan-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px 20px 10px 0;
+}
+
+@media (max-width: 1080px) {
+    .bungkus {
+        height: fit-content;
+    }
+
+    .bungkus .penggunaan, .bungkus .layanan {
+        position: static;
+        border-radius: 10px;
+        width: 90%;
+        margin: 5px;
+        padding: 5px;
+        background-color: #fff;
+        box-shadow: 1px 1px 3px #151515;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .info-trans .foto-card {
+        position: static;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .foto-card img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .info-trans .teks {
+        width: 90%;
+    }
+
+    .bungkus .penggunaan, .bungkus .layanan {
+        position: static;
+        border-radius: 10px;
+        width: 90%;
+        margin: 5px;
+        padding: 5px;
+        background-color: #fff;
+        box-shadow: 1px 1px 3px #151515;
+    }
+
+    .penggunaan li .langkah {
+        width: 70%;
+    }
+
+    .layanan li {
+        margin-bottom: 5px;
+    }
+
+    .layanan li .layanan-item {
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+}

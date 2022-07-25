@@ -1,0 +1,54 @@
+@import url(header.css);
+
+main {
+    padding: 1em 3em;
+}
+
+main .content {
+    background-color: #fff;
+    box-shadow: 0 0 3px #151515;
+    padding: 0 20px 10px 20px;
+}
+
+main .item {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #d3d3d3;
+    box-sizing: border-box;
+    box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.7s;
+}
+
+main a {
+    color: #000;
+}
+
+main a:hover {
+    color: #000;
+}
+
+main a:hover > .item {
+    position: relative;
+    top: -10px;
+    box-shadow: 0 40px 25px -8px rgba(0, 0, 0, 0.3);;
+}
+
+main .item img {
+    width: 120px;
+}
+
+main .riwayat {
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.alert {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+}

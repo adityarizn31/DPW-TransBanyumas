@@ -1,0 +1,53 @@
+@import url(header.css);
+
+@import url(footer.css);
+
+.tentang {
+    height: 1100px;
+}
+
+.tentang .background {
+    width: 100%;
+    text-align: right;
+}
+
+.tentang .background img {
+    width: 80%;
+    box-shadow: 0 0 4px #000;
+}
+
+.tentang .deskripsi {
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.tentang .deskripsi img {
+    width: 30%;
+    margin: 20px;
+}
+
+.tentang .deskripsi .isi {
+    line-height: 1.5em;
+    padding: 5px 10% 10px 10%;
+    text-align: justify;
+}
+
+.tentang .struktur {
+    border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+
+    .tentang .background img {
+        width: 100%;
+    }
+
+    .tentang .deskripsi {
+        width: 100%;
+    }
+}

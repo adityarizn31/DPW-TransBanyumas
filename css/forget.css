@@ -1,0 +1,61 @@
+@import url(css-reset.css);
+
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5.5%;
+}
+
+.card{
+    width: 400px;
+    background-color: #fff;
+    border: 5px double #E62129;
+    border-radius: 10px;
+    padding: 10px 40px 40px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 2px solid #000;
+}
+
+.input-group label {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    padding: 0px;
+    text-transform: capitalize;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -12px;
+    left: 20px;
+    font-size: 13px;
+    padding: 2px 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}

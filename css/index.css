@@ -1,0 +1,169 @@
+@import url(header.css);
+
+@import url(footer.css);
+
+/* Berita */
+
+.berita {
+    margin: 10px 0;
+    width: 100%;
+    height: 762px;
+    background-color: #FFF;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px #000;
+}
+
+.berita .judul {
+    height: 762px;
+    box-sizing: border-box;
+    background-image: url(../img/berita-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.berita .judul p {
+    font-size: 60px;
+}
+
+.berita .berita-content{
+    height: 680px;
+}
+
+.berita .konten {
+    width: 65%;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #DDD;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.berita .konten img {
+    width: 100%;
+    margin: 10px;
+}
+
+.berita .konten-text {
+    height: 80%;
+    box-sizing: border-box;
+}
+
+.berita .konten a {
+    color: #000;
+    border: none;
+    height: 100%;
+}
+
+.berita .konten a img {
+    width: 20px;
+}
+
+.berita .konten a:hover {
+    text-decoration: underline;
+}
+
+.berita .konten a:hover > img {
+    border-radius: 50px;
+    box-shadow: 0 0 4px #000;
+}
+
+.no-halaman {
+    height: 40px;
+}
+
+.page-item {
+    margin: 0;
+}
+
+.page-item a:hover {
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Testimoni */
+
+.testi {
+    background-color: #fff;
+}
+
+.testi .scroller{
+    max-width: 100%;
+    height: 300px;
+    padding: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 4rem;
+    overflow-x: auto;
+}
+
+.testi .scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.testi .scroller-item {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #151515;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px #000;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.testi .scroller-item::after {
+    content: "";
+    background-image: url(../img/quote.png);
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -230px;
+    left: 240px;
+}
+
+.testi .foto {
+    width: 70px;
+    height: 70px;
+    border: 2px ridge;
+    margin: 40px 5px 5px 5px;
+}
+
+.testi .kalimat {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+/* Keuntungan */
+
+.keuntungan .judul {
+    width: 40%;
+    margin: 5% ;
+}
+
+.keuntungan .konten {
+    margin: 10px 20px;
+}
+
+.keuntungan .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    background-color: #fff;
+}
+
+@media (max-width: 500px) {
+    .keuntungan .judul {
+        width: 80%;
+    }
+
+    .berita .judul p {
+        height: 100%;
+        font-size: 30px;
+    }
+}

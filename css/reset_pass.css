@@ -1,0 +1,107 @@
+@import url(css-reset.css);
+
+body {
+    background-image: linear-gradient(rgba(44, 44, 44, 0.9),rgba(172, 172, 172, 0.5));
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 660px;
+}
+
+.masuk {
+    width: 400px;
+    background-color: #fff;
+    border: 5px double #E62129;
+    border-radius: 10px;
+    padding: 10px 40px 40px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.contain-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+    top: -100px;
+    width: 50%;
+    height: 50%;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 2px solid #000;
+}
+
+.input-group label {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    padding: 0px;
+    text-transform: capitalize;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -12px;
+    left: 20px;
+    font-size: 13px;
+    padding: 2px 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.tombol {
+    margin: 15px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tombol button, .tombol a {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+.link a {
+    border: none;
+    color: rgb(51, 51, 247);
+    text-decoration: underline;
+}

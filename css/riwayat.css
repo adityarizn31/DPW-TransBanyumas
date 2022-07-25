@@ -1,0 +1,34 @@
+@import url(header.css);
+
+main {
+    padding: 1em 3em;
+}
+
+main .content {
+    background-color: #fff;
+    box-shadow: 0 0 5px #151515;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+main .judul {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+main .riwayat {
+    font-size: 18px;
+    padding: 10px;
+}
+
+main .riwayat .search {
+    width: 300px;
+}
+
+main .riwayat .row {
+    padding: 5px 10px;
+    margin-bottom: 3px;
+    background-color: #fbfbfb;
+    box-shadow: 1px 1px 1px #d1d1d1;
+}

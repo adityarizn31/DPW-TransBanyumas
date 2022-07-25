@@ -1,0 +1,27 @@
+@import url(header.css);
+
+@import url(nav-kelola.css);
+
+table.table-bordered {
+    border: 1px solid #ddd !important;
+    margin-top: 20px;
+}
+table.table-bordered > thead > tr > th {
+    border: 1px solid #ddd !important;
+}
+table.table-bordered > tbody > tr > td {
+    border: 1px solid #ddd !important;
+}
+
+.content {
+    margin: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #000;
+    background-color: #fff;
+}
+
+.body {
+    border-top: 2px solid;
+    padding-top: 20px;
+}

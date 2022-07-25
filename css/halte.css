@@ -1,0 +1,54 @@
+@import url(header.css);
+
+@import url(nav-kelola.css);
+
+table.table-bordered {
+    border: 1px solid #ddd !important;
+    margin-top: 20px;
+}
+table.table-bordered > thead > tr > th {
+    border: 1px solid #ddd !important;
+}
+table.table-bordered > tbody > tr > td {
+    border: 1px solid #ddd !important;
+}
+
+.content {
+    margin: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #000;
+    background-color: #fff;
+}
+
+.body {
+    border-top: 2px solid;
+    padding-top: 20px;
+}
+
+.custom-pagination form {
+    display: inline-block;
+}
+  
+.custom-pagination button {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 0 3px;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px #000;
+    border: none;
+}
+  
+.custom-pagination button.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #4CAF50;
+}
+  
+.custom-pagination button:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}

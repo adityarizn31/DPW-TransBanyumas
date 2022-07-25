@@ -1,0 +1,47 @@
+@import url(header.css);
+
+@import url(footer.css);
+
+.perkoridor {
+    padding: 20px 50px;
+}
+
+.koridor {
+    border-radius: 20px;
+    margin: 10px;
+    padding-bottom: 10px;
+    background-color: #FFF;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px #000;
+}
+
+.koridor .nama {
+    font-weight: bold;
+    border-radius: 20px 20px 0 0;
+}
+
+.koridor .nama:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.halte {
+    margin: 20px;
+}
+
+.halte ol {
+    padding: 8px;
+}
+
+.halte ol li {
+    margin: 5px 0;
+}
+
+.halte ol li a {
+    color: #000;
+}
+
+.halte ol li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
